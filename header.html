@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- connect css -->
+    <link rel="stylesheet" href="cssheader.css">
+    <!-- connect js -->
+    <script type="text/javascript" src="header.js" defer></script>
+    <!-- bootstrap css and js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body class="background">
+
+    <!-- navbar -->
+<div class="navbar fixed-top">
+        <ul>
+          <li ><button  class="btnnavbar"><i class="bi bi-list-nested"></i></button></li>
+
+            <div class="d-flex text-nowrap justify-content-end">
+              <button  type="button" class="btn btn-info" style="width: 200px;" data-bs-toggle="modal" data-bs-target="#postModal">
+                <i class="bi bi-plus-circle-fill"></i>أضافة منتج  
+              </button>
+            </div>
+
+          <li><a onclick="location.href='my project.html'" class="btnnavbar"><i class="bi bi-heart-fill"></i>المفضله</a></li>
+          <li><button onclick="location.href='my project.html'" class="btnnavbar" ><i class="bi bi-star-fill" ></i>أعلاناتي</button></li>
+          <li><button class="btnnavbar">لوجو</button></li>
+
+        </ul>
+</div>
+    <!-- end navbar -->
+
+
+    <!-- sidebar -->
+
+<nav id="sidebar">
+            <ul>
+                <li>
+                   <button onclick=togglesubmenu(this) class="dropdown_btn">
+                      <div><i class="bi bi-bag-check-fill"></i></div>
+                      <span>المنتجات</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                   </button>
+            
+              <ul class="sub-menu">
+                  <div>
+                     <li><a href="#"><i class="bi bi-infinity"></i>كل الاقسام</a></li>
+                     <li><a href="#"><i class="bi bi-plus-circle"></i>أضافة منتج</a></li>
+                     <li><a href="#"><i class="bi bi-backpack-fill"></i>منتجاتي</a></li>
+                  </div>
+              </ul>
+                </li>
+            
+                 <li>
+                   <button onclick=togglesubmenu(this) class="dropdown_btn">
+                        <div><i class="bi bi-person"></i></div>
+                        <span>الخدمات</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                   </button>
+              <ul class="sub-menu">
+            
+                  <div>
+                        <li><a href="#"><i class="bi bi-book"></i>تبادل الكتب</a></li>
+                        <li><a href="#"><i class="bi bi-journals"></i>خدمات دراسية</a></li>
+                        <li><a href="#"><i class="bi bi-bag-x-fill"></i>المفقودات</a></li>
+                  </div>
+              </ul>
+                </li>
+            
+                <li>
+                  <button onclick=togglesubmenu(this) class="dropdown_btn">
+                         <div> <i class="bi bi-gear"></i></div>
+                         <span>الاعدادات</span>
+                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                  </button>
+                <ul class="sub-menu">
+                  <div>
+                    <li><a href="#"><i class="bi bi-person-circle"></i>حسابي</a></li>
+                    <li><a href="#"><i class="bi bi-globe"></i> english/عربي</a></li>
+                    <li><a href="#"><i class="bi bi-moon-fill"></i>الوضع</a></li>
+                  </div>
+   </ul>
+  </li> 
+ </ul>
+</nav> 
+
+    <!-- end sidebar -->
+
+
+
+ <!--        carousel          -->
+
+<div class="container" > 
+    <div id="carouselExampleCaptions" class="carousel slide my-4" data-bs-ride="carousel" >
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner">
+            
+          <div class="carousel-item active ">
+              <h3 style="text-align: center;">ssssssssewffsssss</h3 >
+
+            <div class="border-p">
+              <p >swefeeeeewqdqdwef</p>
+            </div>
+
+          </div>
+
+          <div class="carousel-item">
+              <h3 style="text-align: center;">ddddddqdwef</h3>
+
+              <div class="border-p">
+              <p>swwef</p>
+            </div>
+
+          </div>
+
+          <div class="carousel-item"> 
+               <h3 style="text-align: center;">sssssssss</h3>
+
+               <div class="border-p">
+              <p>swefeeeeewqdqdwef</p>
+            </div>
+
+            </div>
+        </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+</div>
+
+ <!--    end carousel          -->
+
+
+
+<!-- Filter Buttons -->
+ <div class="filterborder">
+<div class="container my-3 text-center">
+    <button class="btn btn-dark filter-btn active" data-filter="all">كل المنشورات</button>
+    <button class="btn btn-dark filter-btn" data-filter="accessories">اكسسوارات</button>
+    <button class="btn btn-dark filter-btn" data-filter="food">طعام</button>
+    <button class="btn btn-dark filter-btn" data-filter="delivery">توصيلات</button>
+</div>
+</div>
+
+<!-- end Filter Buttons -->
+
+
+<div class="container mt-4">
+    <div id="postsList">
+        <!-- سيتم إضافة المنشورات هنا -->
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="postModalLabel">إنشاء منشور جديد</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="modalPostForm" class="form-group">
+                    <div>
+                        <label for="modalTitleInput">العنوان</label>
+                        <input 
+                            type="text" 
+                            id="modalTitleInput"
+                            class="form-control" 
+                            placeholder="أدخل عنوان المنشور" 
+                            required 
+                        >
+                    </div>
+                    <div class="mt-3">
+                        <label for="modalDescriptionInput">الوصف</label>
+                        <textarea 
+                            id="modalDescriptionInput"
+                            class="form-control" 
+                            placeholder="أدخل وصف المنشور" 
+                            rows="4" 
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="mt-3">
+                        <label for="modalPriceInput">السعر</label>
+                        <input 
+                            type="number" 
+                            id="modalPriceInput"
+                            class="form-control" 
+                            placeholder="أدخل السعر" 
+                            required 
+                        >
+                    </div>
+                    <div class="mt-3">
+                        <label for="modalPhoneInput">رقم الهاتف</label>
+                        <input 
+                            type="tel" 
+                            id="modalPhoneInput"
+                            class="form-control" 
+                            placeholder="أدخل رقم الهاتف" 
+                            required 
+                        >
+                    </div>
+                    <div class="mt-3">
+                        <label for="modalCategoryInput">الفئة</label>
+                        <select id="modalCategoryInput" class="form-control" required>
+                            <option value="">اختر فئة</option>
+                            <option value="accessories">اكسسوارات</option>
+                            <option value="food">طعام</option>
+                            <option value="delivery">توصيلات</option>
+                        </select>
+                    </div>
+                    <div class="mt-3">
+                        <label for="modalImageInput">صورة المنشور</label>
+                        <input 
+                            type="file" 
+                            id="modalImageInput"
+                            accept="image/*"
+                            class="form-control" 
+                            multiple
+                        >
+                    </div>
+                    
+                    <button 
+                        type="submit" 
+                        class="btn btn-success btn-block mt-3"
+                    >
+                        نشر المنشور
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button id="btt" style="display:none; position:fixed; bottom:20px; right:20px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capslock-fill" viewBox="0 0 16 16">
+    <path d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816zM4.5 13.5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1z"/>
+  </svg></button>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>

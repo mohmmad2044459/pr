@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- connect css -->
+    <link rel="stylesheet" href="my project.css">
+    <!-- connect js -->
+    <script type="text/javascript" src="my project.js" defer></script>
+    <!-- bootstrap css and js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar fixed-top">
+        <ul>
+          <li ><button  class="btnnavbar"><i class="bi bi-list-nested"></i></button></li>
+
+         
+
+          <li><a href="#favorat" class="btnnavbar"><i class="bi bi-heart-fill" ></i>المفضله</a></li>
+          <li><a href="#postss" class="btnnavbar"><i class="bi bi-star-fill"></i>إعلاناتي</a></li>
+          <li><button class="btnnavbar">لوجو</button></li>
+
+        </ul>
+</div>
+    <!-- end navbar -->
+
+        <!-- sidebar -->
+
+<nav id="sidebar">
+    <ul>
+        <li>
+           <button onclick=togglesubmenu(this) class="dropdown_btn">
+              <div><i class="bi bi-bag-check-fill"></i></div>
+              <span>المنتجات</span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+           </button>
+    
+      <ul class="sub-menu">
+          <div>
+             <li><a href="#"><i class="bi bi-infinity"></i>كل الاقسام</a></li>
+             <li><a href="#"><i class="bi bi-plus-circle"></i>أضافة منتج</a></li>
+             <li><a href="#"><i class="bi bi-backpack-fill"></i>منتجاتي</a></li>
+          </div>
+      </ul>
+        </li>
+    
+         <li>
+           <button onclick=togglesubmenu(this) class="dropdown_btn">
+                <div><i class="bi bi-person"></i></div>
+                <span>الخدمات</span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+           </button>
+      <ul class="sub-menu">
+    
+          <div>
+                <li><a href="#"><i class="bi bi-book"></i>تبادل الكتب</a></li>
+                <li><a href="#"><i class="bi bi-journals"></i>خدمات دراسية</a></li>
+                <li><a href="#"><i class="bi bi-bag-x-fill"></i>المفقودات</a></li>
+          </div>
+      </ul>
+        </li>
+    
+        <li>
+          <button onclick=togglesubmenu(this) class="dropdown_btn">
+                 <div> <i class="bi bi-gear"></i></div>
+                 <span>الاعدادات</span>
+                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+          </button>
+        <ul class="sub-menu">
+          <div>
+            <li><a href="#"><i class="bi bi-person-circle"></i>حسابي</a></li>
+            <li><a href="#"><i class="bi bi-globe"></i> english/عربي</a></li>
+            <li><a href="#"><i class="bi bi-moon-fill"></i>الوضع</a></li>
+          </div>
+</ul>
+</li> 
+</ul>
+</nav> 
+
+<!-- end sidebar -->
+
+<div id="postss" dir="rtl" style="padding-top: 82px;padding-right: 15px;" >
+    <h4>الاسم :- </h4>
+    <h4>الايميل :- </h4>
+    <h4>الرقم السري :- </h4>
+    <h4>رقم الهاتف :- </h4>
+</div>
+
+<h4 style="padding: 10px; text-align: center;"><i class="bii bi-star-fill text-danger"></i>إعلاناتي</h4>
+    
+
+<div class="container">
+    <div class="post-card card shadow-sm mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src="22.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+             
+                <h5 class="card-title">العنوان</h5>
+                <p class="card-text">المحتوى</p>
+                <p class="text-primary">رقم الهاتف</p>
+              <p class="font-weight-bold text-right">السعر</p>
+    
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#postModal">
+                تعديل
+            </button>
+            <a href="#" class="btn btn-danger delete-btn">حذف</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<h4 id="favorat" style="padding: 10px; text-align: center;">  <i class="bii bi-heart-fill text-danger"></i>المفضلة </h4> 
+
+
+
+<div class="container">
+    <div class="post-card card shadow-sm mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src="22.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+             
+                <h5 class="card-title">العنوان</h5>
+                <p class="card-text">المحتوى</p>
+                <p class="text-primary">رقم الهاتف</p>
+              <p class="font-weight-bold text-right">السعر</p>
+    
+              <i class="bi bi-heart-fill text-danger " style="padding-left: 300px;"></i>
+
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="postModalLabel">إنشاء منشور جديد</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="modalPostForm" class="form-group">
+                    <div>
+                        <label for="modalTitleInput">العنوان</label>
+                        <input 
+                            type="text" 
+                            id="modalTitleInput"
+                            class="form-control" 
+                            placeholder="أدخل عنوان المنشور" 
+                            required 
+                        >
+                    </div>
+                    <div class="mt-3">
+                        <label for="modalDescriptionInput">الوصف</label>
+                        <textarea 
+                            id="modalDescriptionInput"
+                            class="form-control" 
+                            placeholder="أدخل وصف المنشور" 
+                            rows="4" 
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="mt-3">
+                        <label for="modalPriceInput">السعر</label>
+                        <input 
+                            type="number" 
+                            id="modalPriceInput"
+                            class="form-control" 
+                            placeholder="أدخل السعر" 
+                            required 
+                        >
+                    </div>
+                    <div class="mt-3">
+                        <label for="modalPhoneInput">رقم الهاتف</label>
+                        <input 
+                            type="tel" 
+                            id="modalPhoneInput"
+                            class="form-control" 
+                            placeholder="أدخل رقم الهاتف" 
+                            required 
+                        >
+                    </div>
+                    <div class="mt-3">
+                        <label for="modalCategoryInput">الفئة</label>
+                        <select id="modalCategoryInput" class="form-control" required>
+                            <option value="">اختر فئة</option>
+                            <option value="accessories">اكسسوارات</option>
+                            <option value="food">طعام</option>
+                            <option value="delivery">توصيلات</option>
+                        </select>
+                    </div>
+                    <div class="mt-3">
+                        <label for="modalImageInput">صورة المنشور</label>
+                        <input 
+                            type="file" 
+                            id="modalImageInput"
+                            accept="image/*"
+                            class="form-control" 
+                            multiple
+                        >
+                    </div>
+                    <button 
+                        type="submit" 
+                        class="btn btn-success btn-block mt-3"
+                    >
+                        نشر المنشور
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+    </html>
